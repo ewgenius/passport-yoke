@@ -1,49 +1,24 @@
 {
-  "name": "passport-yoke",
-  "version": "0.0.1",
-  "description": "Yoke-id authentication strategy for Passport.",
-  "keywords": [
-    "passport",
-    "yoke",
-    "auth",
-    "authn",
-    "authentication",
-    "identity"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ewgenius/passport-yoke.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ewgenius/passport-yoke/issues"
-  },
-  "author": {
-    "name": "Ewgeniy Hramkow",
-    "email": "ewgeniux@gmail.com",
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+    "name": "passport-yoke",
+    "version": "0.0.1",
+    "description": "Yoke-id authentication strategy for Passport",
+    "keywords": [
+        "passport",
+        "yoke",
+        "auth",
+        "authn",
+        "authentication",
+        "identity"
+    ],
+    "main": "./lib/passport-yoke",
+    "dependencies": {
+        "pkginfo": "0.2.x",
+        "passport-oauth": "0.1.x"
+    },
+    "devDependencies": {
+        "vows": "0.6.x"
+    },
+    "scripts": {
+        "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
     }
-  ],
-  "main": "./lib/passport-yoke",
-  "dependencies": {
-    "pkginfo": "0.2.x",
-    "passport-oauth": "0.1.x"
-  },
-  "devDependencies": {
-    "vows": "0.6.x"
-  },
-  "scripts": {
-    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
-  },
-  "engines": {
-    "node": ">= 0.4.0"
-  },
-  "readme": "# Passport-Yoke\n",
-  "readmeFilename": "README.md",
-  "homepage": "https://github.com/ewgenius/passport-yoke",
-  "_id": "passport-yoke@0.0.1",
-  "_from": "passport-yoke@"
 }
